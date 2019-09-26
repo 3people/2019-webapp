@@ -2,4 +2,9 @@ body{
     font-family: "Helvetica", "Verdana", sans-serif;
 }
 h1{
+    font-size: 40pt;
+}
+
+dl{
+    font-size: 70%;
 }
