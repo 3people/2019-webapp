@@ -1,0 +1,116 @@
+body{
+    background-image : url(background.png);
+    font-size : 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+h1{
+    text-align : center;
+    font-size : 24pt;
+    font-weight : bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+
+article{
+    width: 800px;
+    margin: auto;
+    border: 4px gray solid;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#article-left{
+    width: 550px;
+    float: left;
+}
+
+#rating{
+    background-image: url(rbg.png);
+    font-weight: bold;
+    font-size: 48pt;
+    color:red;
+    align-items: center;
+    display:flex;
+    height: 83px;
+}
+
+
+
+#article-review{
+    width: 47%;
+    margin-left: 2%;
+    float: left;
+}
+#review{
+    margin-bottom: 20pt;
+}
+#review > p:first-child{
+    font-weight: bold;
+    font-size:8pt;
+    background-color: #e8dc9b;
+    border:2px gray solid;
+    border-radius: 10px;
+    padding:8px;
+}
+
+#review > p{
+    overflow: hidden;
+}
+
+#review img{
+    float: left;
+    margin-right: 5px;
+}
+
+span{
+    font-style:italic;
+}
+
+#banner{
+    text-align: center;
+    background-image: url(bannerbg.png);
+    background-repeat: repeat-x;
+    background-position: 50px;
+    height: 50px;
+}
+
+#article-right{
+    width: 250px;
+    background-color: #a2b964;
+    float:right;
+}
+
+#article-right ul{
+    list-style-type: none;
+}
+
+#article-right dl{
+    font-size: 8pt;
+    font-family: Arial,sans-seritf;
+    margin: 10pt;
+}
+
+#article-right dt{
+    font-weight: bold;
+}
+
+#article-right dd{
+    margin-bottom: 10pt;
+}
+
+#bottom{
+    clear: both;
+    background-color: #a2b964;
+    padding: 5px;
+    text-align: center;
+}
+
+#w3c{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
