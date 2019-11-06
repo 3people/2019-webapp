@@ -1,0 +1,16 @@
+ffff;123123;3333333;MasterCard
+ffff;123123;3333333;MasterCard
+dd;ddd;123;Visa
+dfdf;;123;Visa
+df;;123;Visa
+;;;
+ddff;;13213;Visa
+df;;;
+dfdf;1232;123123;Visa
+;123;123;Visa
+dfdd;123123;123132;MasterCard
+eeeeeeeee;1231231;123123;Visa
+Semyeong Lee;2222;4444444444444444;Visa
+Lee Se;222;555555555555555;MasterCard
+Lee se;2123;4444444444444444;Visa
+Lee se;2123;5555555555555555;MasterCard
