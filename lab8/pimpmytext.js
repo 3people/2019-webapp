@@ -7,27 +7,34 @@ function hello() {
 //   textarea.style.fontSize = "24pt";
 // }
 
-function modifyCheck1() {
+function pageLoad() {
+  document.getElementById("pimp").onclick = timer;
+  document.getElementById("check1").onclick = bling;
+  document.getElementById("snoopify").onclick = snoopify;
+  document.getElementById("igpay").onclick = igpay;
+  document.getElementById("malkovitch").onclick = malkovitch;
+}
+
+function bling() {
   var textarea = document.getElementById("area1");
   var checkbox = document.getElementById("check1");
   if (checkbox.checked == true) {
     textarea.style.fontWeight = "bold";
     textarea.style.color = "green";
     textarea.style.textDecoration = "underline";
+    document.body.style.backgroundImage =
+      "url(https://selab.hanyang.ac.kr/courses/cse326/2019/labs/images/8/hundred.jpg)";
   } else {
     textarea.style.fontWeight = "normal";
     textarea.style.color = "black";
     textarea.style.textDecoration = "none";
+    document.body.style.backgroundImage = "none";
   }
 }
 
-function upperCase() {
+function snoopify() {
   var textarea = document.getElementById("area1");
   textarea.value = textarea.value.toUpperCase();
-}
-
-function addSuffix() {
-  var textarea = document.getElementById("area1");
   textarea.value = textarea.value.split(".").join("-izzle");
 }
 
@@ -42,11 +49,6 @@ function modifyArea1() {
 
 function timer() {
   setInterval(modifyArea1, 500);
-}
-
-function bling() {
-  document.body.style.backgroundImage =
-    "url(https://selab.hanyang.ac.kr/courses/cse326/2019/labs/images/8/hundred.jpg)";
 }
 
 function pigLatin(str) {
@@ -96,3 +98,5 @@ function malkovitch() {
   }
   textarea.value = result;
 }
+
+window.onload = pageLoad;
