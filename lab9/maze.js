@@ -5,6 +5,7 @@
 "use strict";
 
 var loser = null; // whether the user has hit a wall
+var won = false;
 
 window.onload = function() {
   var divs = $$(".boundary");
@@ -37,6 +38,7 @@ function startClick() {
   }
   $("status").innerHTML = "Maze Start!";
   loser = false;
+  won = false;
 }
 
 // called when mouse is on top of the End div.
@@ -46,6 +48,8 @@ function overEnd() {
     $("status").innerHTML = "You lose! :( ";
   } else {
     $("status").innerHTML = "You Win! :)";
+    won = true;
+    console.log(won);
   }
 }
 
